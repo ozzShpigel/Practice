@@ -1,0 +1,9 @@
+{
+    "solutionsToBuild": [
+        {
+            "Path": "OzTest\\OzTest.sln"
+        }        
+    ],
+    "failBuildOnUnitTestsFailure": false,
+    "UnitTestFolder": "OzTest\\OzUnitTest\\obj\\Release"
+}

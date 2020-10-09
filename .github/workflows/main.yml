@@ -1,0 +1,59 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+env:
+  MSBUILD: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\Msbuild.exe'
+  MSTEST: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\TestWindow\VSTest.console.exe'
+  jfrogurl: 'https://ncr.jfrog.io/artifactory/r10-maven-snapshots/'
+  jfrogGroupId: 'R10-2019'
+  jfrogArtifactId: 'Contracts'
+  jfrogRepoID: 'snapshots'
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: self-hosted
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      
+      - uses: actions/checkout@v1
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          submodules: recursive
+          ref: 'main'
+
+      #- name: GetPrerequisites
+      #  run: .\build.ps1 -Task GetPrerequisites
+      #  shell: powershell
+
+      - name: Compile
+        run: .\build.ps1 -Task Compile
+        shell: powershell
+
+      - name: Unit Test
+        run: .\build.ps1 -Task UnitTests
+        shell: powershell
+       
+      #- name: Collect Artifacts
+      #  run: .\build.ps1 -Task Drop
+      #  shell: powershell
+
+      #- name: Pack Artifacts
+      #  run: .\build.ps1 -Task CompressArtifacts
+      #  shell: powershell
+
+      #- name: Push Artifacts
+      #  run: .\build.ps1 -Task PushJfrogMaven
+      #  shell: powershell
+

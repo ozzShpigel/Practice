@@ -1,0 +1,14 @@
+C:\GitHub\ozTest\OzTest\OzTest\bin\Release\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\GitHub\ozTest\OzTest\OzTest\bin\Release\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\GitHub\ozTest\OzTest\OzTest\bin\Release\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\GitHub\ozTest\OzTest\OzTest\bin\Release\OzTest.exe.config
+C:\GitHub\ozTest\OzTest\OzTest\bin\Release\OzTest.exe
+C:\GitHub\ozTest\OzTest\OzTest\bin\Release\OzTest.pdb
+C:\GitHub\ozTest\OzTest\OzTest\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\GitHub\ozTest\OzTest\OzTest\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\GitHub\ozTest\OzTest\OzTest\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\GitHub\ozTest\OzTest\OzTest\bin\Release\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\GitHub\ozTest\OzTest\OzTest\obj\Release\OzTest.csproj.CoreCompileInputs.cache
+C:\GitHub\ozTest\OzTest\OzTest\obj\Release\OzTest.csproj.CopyComplete
+C:\GitHub\ozTest\OzTest\OzTest\obj\Release\OzTest.exe
+C:\GitHub\ozTest\OzTest\OzTest\obj\Release\OzTest.pdb
