@@ -11,7 +11,7 @@ on:
     branches: [ main ]
 env:
   MSBUILD: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin\Msbuild.exe'
-  MSTEST: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TestWindow\VSTest.console.exe'
+  MSTEST: 'C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\Extensions\TestPlatform\VSTest.console.exe'
   jfrogurl: 'https://ncr.jfrog.io/artifactory/r10-maven-snapshots/'
   jfrogGroupId: 'R10-2019'
   jfrogArtifactId: 'Contracts'
